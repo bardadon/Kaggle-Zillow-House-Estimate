@@ -46,6 +46,10 @@ These features are mostly indications of wealth and house quality, such as: havi
 df.sample(5)
 ```
 
+[Sample Data](https://www.notion.so/d5f5348120ba4a13887a6524e88cf3fb)
+
+5 rows × 81 columns
+
 # EDA
 
 ## To do:
