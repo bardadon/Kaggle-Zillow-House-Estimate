@@ -46,7 +46,7 @@ These features are mostly indications of wealth and house quality, such as: havi
 df.sample(5)
 ```
 
-[Sample Data](https://www.notion.so/d5f5348120ba4a13887a6524e88cf3fb)
+[Sample Data](Kaggle%20-%20Zillow%E2%80%99s%20Home%20Value%20Prediction%20(Zestimate%20d9a91ddae16d44ec974354d0ed4318d5/Sample%20Data%20d5f5348120ba4a13887a6524e88cf3fb.csv)
 
 5 rows × 81 columns
 
