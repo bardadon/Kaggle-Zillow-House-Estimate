@@ -1,8 +1,7 @@
-# Kaggle -  Zillow’s Home Value Prediction (Zestimate)
+# Kaggle Competition -  Zillow’s Home Value Prediction (Zestimate)
 Created: Mar 11, 2021
 
 
-# Zillow House Estimate Project
 
 Zillow is a leading real estate and rental marketplace dedicated to empowering consumers with data, they serve the full lifecycle of owning and living in a home: buying, selling, renting, financing, remodeling, and more.
 
