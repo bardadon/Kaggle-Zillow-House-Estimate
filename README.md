@@ -1,18 +1,6 @@
 # Kaggle -  Zillow’s Home Value Prediction (Zestimate)
-
-Category: Data Science Projects
 Created: Mar 11, 2021
-Description: Can you improve the algorithm that changed the world of real estate?
-Featured: No
 
-- **What should be in the presentation?**
-    1. A clear explanation of the problem and why its important.
-    2. A summary of the data cleaning and exploration, including visualizations
-    3. How I created a baseline
-    4. My logic for selecting models to test, tuning models that I selected, and measuring the efficacy, e.g. why did I choose to measure the model using RMSE over R^2?
-    5. The results I got for each model, also include a visualization.
-    6. My approach to training the final model and making predictions.
-    7. A summary of the project: results, findings, and areas that could be improved or explored in the future.
 
 # Zillow House Estimate Project
 
