@@ -1,3 +1,5 @@
+
+[Export-f1a30466-5747-46a7-bc2f-56bf8af626b7.zip](https://github.com/bardadon/Kaggle-Zillow-House-Estimate/files/6217691/Export-f1a30466-5747-46a7-bc2f-56bf8af626b7.zip)
 # Kaggle -  Zillow’s Home Value Prediction (Zestimate)
 
 Category: Data Science Projects
