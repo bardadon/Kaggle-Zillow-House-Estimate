@@ -1,5 +1,8 @@
 # Kaggle Competition -  Zillow’s Home Value Prediction (Zestimate)
-Created: Mar 11, 2021
+__Created__: Mar 11, 2021
+__author__ = "Bar Dadon"
+__email__ = "bdadon50@gmail.com"
+
 
 
 
