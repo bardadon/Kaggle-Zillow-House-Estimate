@@ -39,7 +39,7 @@ df.sample(5)
 
 __Created__: Mar 11, 2021
 
-__author__ = Bar Dadon
+__Author__: Bar Dadon
 
-__email__ = bdadon50@gmail.com
+__Email__: bdadon50@gmail.com
 
