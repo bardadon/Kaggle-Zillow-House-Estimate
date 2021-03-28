@@ -1,12 +1,4 @@
 # Kaggle Competition -  Zillow’s Home Value Prediction (Zestimate)
-__Created__: Mar 11, 2021
-
-__author__ = "Bar Dadon"
-
-__email__ = "bdadon50@gmail.com"
-
-
-
 
 Zillow is a leading real estate and rental marketplace dedicated to empowering consumers with data, they serve the full lifecycle of owning and living in a home: buying, selling, renting, financing, remodeling, and more.
 
@@ -39,4 +31,15 @@ These features are mostly indications of wealth and house quality, such as: havi
 ```python
 df.sample(5)
 ```
+
+
+
+
+
+
+__Created__: Mar 11, 2021
+
+__author__ = Bar Dadon
+
+__email__ = bdadon50@gmail.com
 
