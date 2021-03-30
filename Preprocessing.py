@@ -13,18 +13,14 @@ class preprocessor:
         self.was_fit = False
         
     def fit(self, x, y=None):
-        
         self.was_fit = True
-        
         # filter
         x_new = x.drop(self.cols_to_filter, axis=1)
-        
         
         # impute
         x_new = minus_1_imputer(x_new, self.cols_to_impute_minus_1)
         x_new = most_frequent_imputer(x_new)
              
-        
         # dummy code
         self.categorical_features = extract_cat_features(x_new)
         dummied = pd.get_dummies(x_new, columns = self.categorical_features, dummy_na=True, drop_first = True)
@@ -34,7 +30,6 @@ class preprocessor:
         return self
         
     def transform(self, x, y=None):
-        
         if not self.was_fit:
             raise Error("need to fit preprocessor first")
             
