@@ -29,10 +29,16 @@ In order to estimate Zillow's houses, in this competition, we were given a datas
 These features are mostly indications of wealth and house quality, such as: having a pool or not, the square-foot area of the street around the house, overall condition, year built, and so on.
 
 
+|   |  Id | MSSubClass | MSZoning | LotFrontage | LotArea | Street | Alley | LotShape | LandContour | Utilities | ... | PoolArea | PoolQC | Fence | MiscFeature | MiscVal | MoSold | YrSold | SaleType | SaleCondition | SalePrice |
+|--:|----:|-----------:|---------:|------------:|--------:|-------:|------:|---------:|------------:|----------:|----:|---------:|-------:|------:|------------:|--------:|-------:|-------:|---------:|--------------:|----------:|
+|   | 995 | 20         | RL       | 96.0        | 12456   | Pave   | NaN   | Reg      | Lvl         | AllPub    | ... | 0        | NaN    | NaN   | NaN         | 0       | 7      | 2009   | WD       | Normal        | 337500    |
+|   | 885 | 20         | RL       | 65.0        | 7150    | Pave   | NaN   | Reg      | Lvl         | AllPub    | ... | 0        | NaN    | GdWo  | NaN         | 0       | 7      | 2009   | WD       | Normal        | 100000    |
+|   | 60  | 20         | RL       | 60.0        | 7200    | Pave   | NaN   | Reg      | Bnk         | AllPub    | ... | 0        | NaN    | MnPrv | NaN         | 0       | 1      | 2008   | WD       | Normal        | 124900    |
+|   | 537 | 60         | RL       | 57.0        | 8924    | Pave   | NaN   | IR1      | Lvl         | AllPub    | ... | 0        | NaN    | NaN   | NaN         | 0       | 7      | 2008   | WD       | Normal        | 188000    |
+|   | 78  | 50         | RM       | 50.0        | 8635    | Pave   | NaN   | Reg      | Lvl         | AllPub    | ... | 0        | NaN    | MnPrv | NaN         | 0       | 1      | 2008   | WD       | Normal        | 127000    |
 
 
 
-[Export-16818779-c692-43cb-ad14-b49329a85104.zip](https://github.com/bardadon/Kaggle-Zillow-House-Estimate/files/6230308/Export-16818779-c692-43cb-ad14-b49329a85104.zip)
 
 
 __Created__: Mar 11, 2021
