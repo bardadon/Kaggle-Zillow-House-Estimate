@@ -78,6 +78,15 @@ print('The features that did not meet any one of the feature selection tests are
 `The features that did not meet any one of the feature selection tests are: 
 {'Fence', 'GarageYrBlt', 'BsmtFinType1', 'GarageCond', 'BsmtFinType2', 'PoolQC', 'BsmtFinSF2', 'Exterior2nd', 'MiscFeature', 'LandContour', 'HeatingQC', 'GarageType', 'RoofStyle', 'KitchenAbvGr', 'HouseStyle', 'Condition2', 'Alley', 'Condition1', 'PoolArea', 'Functional', 'PavedDrive', 'GarageCars', 'LowQualFinSF', 'MoSold', '1stFlrSF', 'RoofMatl', 'Electrical', 'Exterior1st', 'TotRmsAbvGrd', 'LandSlope', 'Utilities', 'BsmtHalfBath', 'BldgType', '3SsnPorch', 'YrSold', 'MiscVal'}`
 
+## Building the Model
+
+The model was built using the ensemble method called Gradient Boosting.
+
+Gradient Boosting can handle data sets with a relatively high number of features compared to observations, also since Boosting methods rely on weak learners to learn from the errors of previous learners(In this case Decision trees) it is suitable in cases where there are no extremely important feature.
+
+### Tuning Model
+
+Hyper-parameter tuning is especially significant for Gradient Boosting models since they are prone to overfitting.
 
 
 __Created__: Mar 11, 2021
