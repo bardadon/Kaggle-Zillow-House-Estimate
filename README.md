@@ -45,9 +45,30 @@ One of the biggest challenges in this project was cleaning the data. Out of 80 f
 
 ```python
 # Checking how many records have missing values in each feature
-df.isnull().sum().sort_values(ascending = False).head(20)
+null_DataFrame = pd.DataFrame(df.isnull().sum().sort_values(ascending = False).head(20), columns = ['Amount Missing'])
 ```
-
+|              | Amount Missing |
+|-------------:|---------------:|
+|    PoolQC    | 1453           |
+|  MiscFeature | 1406           |
+|     Alley    | 1369           |
+|     Fence    | 1179           |
+|  FireplaceQu | 690            |
+|  LotFrontage | 259            |
+|  GarageCond  | 81             |
+|  GarageType  | 81             |
+|  GarageYrBlt | 81             |
+| GarageFinish | 81             |
+|  GarageQual  | 81             |
+| BsmtExposure | 38             |
+| BsmtFinType2 | 38             |
+| BsmtFinType1 | 37             |
+|   BsmtCond   | 37             |
+|   BsmtQual   | 37             |
+|  MasVnrArea  | 8              |
+|  MasVnrType  | 8              |
+|  Electrical  | 1              |
+|   Utilities  | 0              |
 
 __Created__: Mar 11, 2021
 
