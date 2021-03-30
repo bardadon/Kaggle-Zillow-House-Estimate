@@ -38,37 +38,47 @@ These features are mostly indications of wealth and house quality, such as: havi
 |   | 537 | 60         | RL       | 57.0        | 8924    | Pave   | NaN   | IR1      | Lvl         | AllPub    | ... | 0        | NaN    | NaN   | NaN         | 0       | 7      | 2008   | WD       | Normal        | 188000    |
 |   | 78  | 50         | RM       | 50.0        | 8635    | Pave   | NaN   | Reg      | Lvl         | AllPub    | ... | 0        | NaN    | MnPrv | NaN         | 0       | 1      | 2008   | WD       | Normal        | 127000    |
 
+## Feature Selection
 
-### Data Quality & Cleaning
+Since the data has a lot of features compared to the amount of observations(records of houses), It was necessary to select only the best predictors in order to avoid creating a slow and highly biased model.
 
-One of the biggest challenges in this project was cleaning the data. Out of 80 features 19 had missing values.
+I've divided the features in the data set to numerical and categorical, each group have gone through a different set of feature selection tests.
+
+### Numerical Features
+
+The N*umerical* feature selection tests were:
+
+1. Variance Threshold -
+    - Finding features with a variance lower than a certain threshold.
+    - Threshold is set to 0.
+2. Correlation with other features -
+    - Finding features with *High* correlation with other features.
+    - High correlation is defined as higher than 0.85 or lower than -0.85.
+3. Correlation with the target variable - 
+    - Finding features with *Low* correlation with the target variable.
+    - Low correlation is defined as between [0.05, -0.05].
+
+### Categorical Features:
+
+The C*ategorical* feature selection test were:
+
+1. Chi-Square test -
+    - Null Hypothesis- The two *Categorical* variables are independent.
+    - Alternate Hypothesis- The two *Categorical* variables are dependent.
+
+### Tests Summary
+
+Out of a total of 80 features, 36 did NOT meet any one of the tests for feature selection and therefore were dropped.
 
 ```python
-# Checking how many records have missing values in each feature
-null_DataFrame = pd.DataFrame(df.isnull().sum().sort_values(ascending = False).head(20), columns = ['Amount Missing'])
+overall_features_to_drop = features_dropped_var.union(features_dropped_const, features_to_drop_pairs, features_to_drop_target,features_to_drop_chi )
+print('The features that did not meet any one of the feature selection tests are: \n{}'.format(overall_features_to_drop))
 ```
-|              | Amount Missing |
-|-------------:|---------------:|
-|    PoolQC    | 1453           |
-|  MiscFeature | 1406           |
-|     Alley    | 1369           |
-|     Fence    | 1179           |
-|  FireplaceQu | 690            |
-|  LotFrontage | 259            |
-|  GarageCond  | 81             |
-|  GarageType  | 81             |
-|  GarageYrBlt | 81             |
-| GarageFinish | 81             |
-|  GarageQual  | 81             |
-| BsmtExposure | 38             |
-| BsmtFinType2 | 38             |
-| BsmtFinType1 | 37             |
-|   BsmtCond   | 37             |
-|   BsmtQual   | 37             |
-|  MasVnrArea  | 8              |
-|  MasVnrType  | 8              |
-|  Electrical  | 1              |
-|   Utilities  | 0              |
+
+`The features that did not meet any one of the feature selection tests are: 
+{'Fence', 'GarageYrBlt', 'BsmtFinType1', 'GarageCond', 'BsmtFinType2', 'PoolQC', 'BsmtFinSF2', 'Exterior2nd', 'MiscFeature', 'LandContour', 'HeatingQC', 'GarageType', 'RoofStyle', 'KitchenAbvGr', 'HouseStyle', 'Condition2', 'Alley', 'Condition1', 'PoolArea', 'Functional', 'PavedDrive', 'GarageCars', 'LowQualFinSF', 'MoSold', '1stFlrSF', 'RoofMatl', 'Electrical', 'Exterior1st', 'TotRmsAbvGrd', 'LandSlope', 'Utilities', 'BsmtHalfBath', 'BldgType', '3SsnPorch', 'YrSold', 'MiscVal'}`
+
+
 
 __Created__: Mar 11, 2021
 
