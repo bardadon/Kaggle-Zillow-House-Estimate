@@ -39,7 +39,14 @@ These features are mostly indications of wealth and house quality, such as: havi
 |   | 78  | 50         | RM       | 50.0        | 8635    | Pave   | NaN   | Reg      | Lvl         | AllPub    | ... | 0        | NaN    | MnPrv | NaN         | 0       | 1      | 2008   | WD       | Normal        | 127000    |
 
 
+### Data Quality & Cleaning
 
+One of the biggest challenges in this project was cleaning the data. Out of 80 features 19 had missing values.
+
+```python
+# Checking how many records have missing values in each feature
+df.isnull().sum().sort_values(ascending = False).head(20)
+```
 
 
 __Created__: Mar 11, 2021
