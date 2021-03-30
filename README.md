@@ -24,9 +24,9 @@ In other words, knowing how to calculate and estimate a home's value independent
 
 # The Data
 
-In order to estimate Zillow's houses, in this competition, we were given a dataset of 2919 records of houses where each house is defined by 81 features. 
+In order to estimate Zillow's houses, in this competition, we were given a data-set of 2919 records of houses where each house is defined by 80 features plus a target variable which indicates the Sale Price at which the house was sold. 
 
-These features are mostly indications of wealth and house quality, such as: having a pool or not, the square-foot area of the street around the house, overall condition, year built, and so on.
+The features are mostly indications of wealth and house quality, such as: having a pool or not, the square-foot area of the street around the house, overall condition, year built, and so on.
 
 
 ## Sample Data
