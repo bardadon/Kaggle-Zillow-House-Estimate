@@ -66,7 +66,7 @@ The C*ategorical* feature selection test were:
     - Null Hypothesis- The two *Categorical* variables are independent.
     - Alternate Hypothesis- The two *Categorical* variables are dependent.
 
-### Tests Summary
+### Feature Selection Summary
 
 Out of a total of 80 features, 36 did NOT meet any one of the tests for feature selection and therefore were dropped.
 
