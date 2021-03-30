@@ -28,13 +28,11 @@ In order to estimate Zillow's houses, in this competition, we were given a datas
 
 These features are mostly indications of wealth and house quality, such as: having a pool or not, the square-foot area of the street around the house, overall condition, year built, and so on.
 
-```python
-df.sample(5)
-```
 
 
 
 
+[Export-16818779-c692-43cb-ad14-b49329a85104.zip](https://github.com/bardadon/Kaggle-Zillow-House-Estimate/files/6230308/Export-16818779-c692-43cb-ad14-b49329a85104.zip)
 
 
 __Created__: Mar 11, 2021
