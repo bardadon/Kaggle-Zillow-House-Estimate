@@ -29,6 +29,7 @@ In order to estimate Zillow's houses, in this competition, we were given a datas
 These features are mostly indications of wealth and house quality, such as: having a pool or not, the square-foot area of the street around the house, overall condition, year built, and so on.
 
 
+## Sample Data
 |   |  Id | MSSubClass | MSZoning | LotFrontage | LotArea | Street | Alley | LotShape | LandContour | Utilities | ... | PoolArea | PoolQC | Fence | MiscFeature | MiscVal | MoSold | YrSold | SaleType | SaleCondition | SalePrice |
 |--:|----:|-----------:|---------:|------------:|--------:|-------:|------:|---------:|------------:|----------:|----:|---------:|-------:|------:|------------:|--------:|-------:|-------:|---------:|--------------:|----------:|
 |   | 995 | 20         | RL       | 96.0        | 12456   | Pave   | NaN   | Reg      | Lvl         | AllPub    | ... | 0        | NaN    | NaN   | NaN         | 0       | 7      | 2009   | WD       | Normal        | 337500    |
