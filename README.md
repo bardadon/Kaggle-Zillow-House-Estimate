@@ -160,7 +160,7 @@ The hyper-parameters I tuned are: Max Depth, Max Features, and Learning Rate.
 
 
 
-# <ins>Fitting the Model</ins>
+# Fitting the Model
 After getting to know how the model interacts with each hyper-parameter, the next step was to find the optimal set of hyper-parametes via a GridSearch.
 
 The optimal set of parameters are:
@@ -178,7 +178,7 @@ r2_score(y_val, predictions)
 |-------------------:|---------------------:|
 |14807.725894054665  |  0.9074737033362817
 
-## Summary Statistics
+### Summary Statistics
 
 |            | Prediction |        Actual |    Difference     |  Difference(%) | 
 |-----------:|--------------:|--------------:|---------------:|------------:|
@@ -192,9 +192,35 @@ r2_score(y_val, predictions)
 |     max    | 611386.944395 | 625000.000000 | 199950.671495  | 1.249692   |
 
 
-
-
-
+## Building a Pipeline 
+The pipline is made from the pre-processing object(from the Helpers Folder) and the GradientBoosting model 
+``` python 
+my_model = Pipeline([('preprocessor', p), ('regressor', gbm)])
+```
+## Predict Test Set and creating a submission file
+For this competition there is no test labels to compare and score the final model, I created the submission file as requested by the competition hosts.
+The submission file consists of 1458 unseen records of houses with their corresponding prediction of the Sale Price.
+``` 
+x_test = pd.read_csv('test.csv')
+predictions = my_model.predict(x_test)
+submission_file = pd.DataFrame(test_Id, columns = ['Id'])
+submission_file['SalePrice'] = predictions
+submission_file
+```
+|   Id      | SalePrice     |              
+|----------:|--------------:|
+| 1461      | 129244.536095 | 
+| 1462      | 161658.243876 |  
+| 1463      | 183011.612097 |  
+| 1464      | 190559.171617 |  
+| 1465      | 186620.033344 | 
+| ...       | ...           |  
+| 2915      | 79269.965503  |   
+| 2916      | 82063.714533  |   
+| 2917      | 183891.232953 | 
+| 2918      | 110928.786663 |   
+|2919       | 227105.748241 |   
+    
 __Created__: Mar 11, 2021
 
 __Author__: Bar Dadon
