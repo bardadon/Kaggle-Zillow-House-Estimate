@@ -82,7 +82,7 @@ print('The features that did not meet any one of the feature selection tests are
 
 The model was built using the ensemble method called Gradient Boosting.
 
-Gradient Boosting can handle data sets with a relatively high number of features compared to observations, also since Boosting methods rely on weak learners to learn from the errors of previous learners(In this case Decision trees) it is suitable in cases where there are no extremely important feature.
+Gradient Boosting can handle data sets with a relatively high number of features compared to observations, also since Boosting methods rely on weak learners to learn from the errors of previous learners(In this case Decision trees) it is suitable in cases where there are no extremely important features.
 
 ### Tuning Model
 
