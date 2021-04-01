@@ -48,7 +48,7 @@ I've divided the features in the data set to numerical and categorical, each gro
 
 The N*umerical* feature selection tests were:
 
-1. Variance Threshold -
+1. <ins>Variance Threshold<ins> -
     - Finding features with a variance lower than a certain threshold.
     - Threshold is set to 0.
 2. Correlation with other features -
