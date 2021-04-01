@@ -93,7 +93,7 @@ Since Gradient Boosting is prone to overfitting it was important to tune hyper-p
 
 The hyper-parameters I tuned are: Max Depth, Max Features, and Learning Rate. 
 
-1. Max Depth
+1. <ins>__Max Depth__<\ins>
 ![index1111](https://user-images.githubusercontent.com/65648983/113309255-a3648b00-930f-11eb-99de-76cfcbae6ba2.png)
 
 | max_depth |  train_error | validation_error |
@@ -109,16 +109,23 @@ The hyper-parameters I tuned are: Max Depth, Max Features, and Learning Rate.
 | 10        | 61.143895    | 21707.195643     |
 | 15        | 1.575364     | 23671.361496     |
 | 20        | 1.534816     | 24709.851204     |
-| 38        |              |                  |
-| 38        |              |                  |
-| 37        |              |                  |
-| 37        |              |                  |
-| 37        |              |                  |
-| 8         |              |                  |
-| 8         |              |                  |
-| 1         |              |                  |
-| 0         |              |                  |
 
+2. <ins>__Max Features__<\ins>
+
+![index1231](https://user-images.githubusercontent.com/65648983/113309959-5fbe5100-9310-11eb-9b97-2bc1f6d64624.png)
+|max_features |  train_error     |validation_error
+|------------:|-----------------:|--------------:|
+| 1.0         | 21967.308221     | 25737.532621 |
+| 5.0         | 14363.436803     | 17989.454864 |
+| 10.0        | 12705.556069     | 16963.207451 |
+| 20.0        | 11672.629323     | 15917.558761 |
+| 40.0        | 10972.956964     | 15348.508493 |
+| 60.0        | 10363.054822     | 15527.005733 |
+| 80.0        | 10563.508034     | 15742.870212 |
+| NaN         | 10423.167237     | 16038.734329 |   
+
+
+3. <ins>__Learning Rate__<\ins>
 __Created__: Mar 11, 2021
 
 __Author__: Bar Dadon
