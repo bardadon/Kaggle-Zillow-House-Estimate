@@ -163,13 +163,11 @@ The hyper-parameters I tuned are: Max Depth, Max Features, and Learning Rate.
 # <ins>Fitting the Model</ins>
 After getting to know how the model interacts with each hyper-parameter, the next step was to find the optimal set of hyper-parametes via a GridSearch.
 
-## Optimal Hyper-paramters
 The optimal set of parameters are:
 ``` python
 gs_cv.best_params_
 {'learning_rate': 0.05, 'max_depth': 5, 'max_features': 50}
 ```                          
-## Training Score
 According to the competition I'll score the model using MAE, and I will add R^2 as a basic regression metric to score the model.
 
 ``` python
