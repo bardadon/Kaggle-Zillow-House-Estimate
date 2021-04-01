@@ -51,10 +51,10 @@ The N*umerical* feature selection tests were:
 1. <ins>Variance Threshold</ins> -
     - Finding features with a variance lower than a certain threshold.
     - Threshold is set to 0.
-2. Correlation with other features -
+2. <ins>Correlation with other features</ins> -
     - Finding features with *High* correlation with other features.
     - High correlation is defined as higher than 0.85 or lower than -0.85.
-3. Correlation with the target variable - 
+3. <ins>Correlation with the target variable</ins> - 
     - Finding features with *Low* correlation with the target variable.
     - Low correlation is defined as between [0.05, -0.05].
 
@@ -62,7 +62,7 @@ The N*umerical* feature selection tests were:
 
 The C*ategorical* feature selection test were:
 
-1. Chi-Square test -
+1. <ins>Chi-Square test</ins> -
     - Null Hypothesis- The two *Categorical* variables are independent.
     - Alternate Hypothesis- The two *Categorical* variables are dependent.
 
