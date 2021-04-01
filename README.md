@@ -87,7 +87,37 @@ Gradient Boosting can handle data sets with a relatively high number of features
 ### Tuning Model
 
 Hyper-parameter tuning is especially significant for Gradient Boosting models since they are prone to overfitting.
+First, In order to understand the model's hyper-parameters better I plotted learning curves. These learning curves can help learn about the model's goodness of fit as a function of any hyper-parameter.
 
+Since Gradient Boosting is prone to overfitting it was important to tune hyper-parameters that would act as regularization for the model.
+The hyper-parameters I tuned are: Max Depth, Max Features, and Learning Rate. 
+
+1. Max Depth
+
+    ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c2169df9-eb2e-46e6-9b35-df8c628d0af1/index1111.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c2169df9-eb2e-46e6-9b35-df8c628d0af1/index1111.png)
+
+| max_depth |  train_error | validation_error |
+|----------:|-------------:|-----------------:|
+| 1         | 18090.849971 | 20221.128531     |
+| 2         | 13381.785825 | 16609.755916     |
+| 3         | 10423.167237 | 16066.300709     |
+| 4         | 7587.704458  | 15843.219232     |
+| 5         | 5072.825906  | 16624.464742     |
+| 6         | 2819.594728  | 16781.484089     |
+| 7         | 1461.937664  | 18296.192063     |
+| 8         | 643.510065   | 18995.070019     |
+| 10        | 61.143895    | 21707.195643     |
+| 15        | 1.575364     | 23671.361496     |
+| 20        | 1.534816     | 24709.851204     |
+| 38        |              |                  |
+| 38        |              |                  |
+| 37        |              |                  |
+| 37        |              |                  |
+| 37        |              |                  |
+| 8         |              |                  |
+| 8         |              |                  |
+| 1         |              |                  |
+| 0         |              |                  |
 
 __Created__: Mar 11, 2021
 
