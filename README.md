@@ -167,21 +167,19 @@ After getting to know how the model interacts with each hyper-parameter, the nex
 The optimal set of parameters are:
 ``` python
 gs_cv.best_params_
-```
 {'learning_rate': 0.05, 'max_depth': 5, 'max_features': 50}
-                          
+```                          
 ## Training Score
 According to the competition I'll score the model using MAE, and I will add R^2 as a basic regression metric to score the model.
 
 ``` python
 mean_absolute_error(y_val, predictions)
 r2_score(y_val, predictions)
-```
 
 | Training MAE       |R^2 - Score           | 
 |-------------------:|---------------------:|
 |14807.725894054665  |  0.9074737033362817
-
+```
 - __In Addition I also added some summary statistics for the results of the training data:__
              | Prediction |        Actual |    Difference |  Difference(%) | 
 |-----------:|--------------:|--------------:|---------------:|------------|
