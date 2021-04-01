@@ -110,6 +110,12 @@ The hyper-parameters I tuned are: Max Depth, Max Features, and Learning Rate.
 | 15        | 1.575364     | 23671.361496     |
 | 20        | 1.534816     | 24709.851204     |
 
+| Min Validation MAE |Optimal Max Depth| 
+|-------------------:|---------------------:|
+|15843.219232272917  |  4 
+
+
+
 2. <ins>__Max Features__</ins>
 
 ![index1231](https://user-images.githubusercontent.com/65648983/113309959-5fbe5100-9310-11eb-9b97-2bc1f6d64624.png)
