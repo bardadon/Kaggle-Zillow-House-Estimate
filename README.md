@@ -9,6 +9,7 @@ Zillow estimates the value of their homes and calls it "Zestimate".
 > *" “Zestimates” are estimated home values based on 7.5 million statistical and machine learning models that analyze hundreds of data points on each property."*
 
 In 5/24/2017 Zillow has initiated a Kaggle competition in order to improve their Zestimate model.
+According to the rules of the competition the model will be scored using MAE(Mean Absolute Error).
 
 This is my take on their competition.
 
@@ -156,6 +157,45 @@ The hyper-parameters I tuned are: Max Depth, Max Features, and Learning Rate.
 | Min Validation MAE |Optimal Learning Rate| 
 |-------------------:|---------------------:|
 |16112.084973903966  |  0.1
+
+
+
+# <ins>Fitting the Model</ins>
+After getting to know how the model interacts with each hyper-parameter, the next step was to find the optimal set of hyper-parametes via a GridSearch.
+
+## Optimal Hyper-paramters
+The optimal set of parameters are:
+``` python
+gs_cv.best_params_
+```
+{'learning_rate': 0.05, 'max_depth': 5, 'max_features': 50}
+                          
+## Training Score
+According to the competition I'll score the model using MAE, and I will add R^2 as a basic regression metric to score the model.
+
+``` python
+mean_absolute_error(y_val, predictions)
+r2_score(y_val, predictions)
+```
+
+| Training MAE       |R^2 - Score           | 
+|-------------------:|---------------------:|
+|14807.725894054665  |  0.9074737033362817
+
+- __In Addition I also added some summary statistics for the results of the training data:__
+             | Prediction |        Actual |    Difference |  Difference(%) | 
+|-----------:|--------------:|--------------:|---------------:|------------|
+|    count   | 487.000000    | 487.000000    | 487.000000     | 487.000000 |
+|    mean    | 179210.896351 | 178135.689938 | 1075.206413    | 0.086924   |
+|     std    | 74087.213983  | 78640.211671  | 23896.659723   | 0.109026   |
+|     min    | 38893.902954  | 37900.000000  | -139842.673778 | 0.000332   |
+|     25%    | 129538.513265 | 127250.000000 | -7988.900620   | 0.023714   |
+|     50%    | 161637.790811 | 159434.000000 | 738.402683     | 0.057417   |
+|     75%    | 211713.528485 | 211950.000000 | 11156.081762   | 0.113510   |
+|     max    | 611386.944395 | 625000.000000 | 199950.671495  | 1.249692   |
+
+
+
 
 
 __Created__: Mar 11, 2021
