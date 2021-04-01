@@ -175,12 +175,12 @@ According to the competition I'll score the model using MAE, and I will add R^2 
 ``` python
 mean_absolute_error(y_val, predictions)
 r2_score(y_val, predictions)
-
+```
 | Training MAE       |R^2 - Score           | 
 |-------------------:|---------------------:|
 |14807.725894054665  |  0.9074737033362817
-```
-- __In Addition I also added some summary statistics for the results of the training data:__
+
+## summary statistics
              | Prediction |        Actual |    Difference |  Difference(%) | 
 |-----------:|--------------:|--------------:|---------------:|------------|
 |    count   | 487.000000    | 487.000000    | 487.000000     | 487.000000 |
