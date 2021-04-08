@@ -2,7 +2,7 @@
 
 Zillow is a leading real estate and rental marketplace dedicated to empowering consumers with data, they serve the full lifecycle of owning and living in a home: buying, selling, renting, financing, remodeling, and more.
 
-Zillow estimates the value of their homes and calls it "Zestimate". 
+Zillow estimates the value of their houses and calls it "Zestimate". 
 
 *From Zillow*:
 
